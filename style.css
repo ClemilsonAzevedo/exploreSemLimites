@@ -1,0 +1,50 @@
+:root {
+  --text-font: "Mulish", sans-serif;
+  --title-color: #B52184;
+  --paragraph-color: #312D64;
+  --bg-color: #f9f4fb;
+  --arrow-down: url(assets/arrow-down-svg.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font);
+  background-color: var(--bg-color);
+  width: 100vw;
+}
+
+#home {
+  width: 100%;
+  text-align: center;
+  border: 1px solid red;
+}
+
+#home img {
+  width: 85%;
+}
+
+#home h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: normal;
+  color: var(--title-color);
+}
+
+#home p{
+  color:var(--paragraph-color);
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.vector {
+  display: block;
+  margin: 35px auto;
+  background: var(--arrow-down);
+  width: 58px;
+  height: 105px;
+}
