@@ -7,6 +7,7 @@
   --sec-card-bg-color: linear-gradient(134deg, #343193 0%, #302c63 100%);
   --cards-bg-color: #fff;
   --arrow-down: url(assets/arrow-down-svg.svg);
+  --style-border: 1.5px solid var(--paragraph-color);
 }
 
 /* reset CSS */
@@ -78,16 +79,102 @@ body {
   box-shadow: 0px 3px 13px 0px #00000040;
 }
 
-.card h3{
+.card h3 {
   color: var(--text-color);
   font-size: 28px;
   font-weight: bold;
 }
 
-.card p{
+.card p {
   font-size: 16px;
   font-weight: normal;
   color: var(--paragraph-color);
   line-height: normal;
   width: 265px;
+}
+
+/* Form Section */
+
+#form{
+  width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 78px 25px;
+  gap: 25px;
+}
+
+form h3{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 20px;
+}
+
+fieldset{
+  padding: 12px 16px 12px 14px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 16px;
+  border: var(--style-border);
+}
+
+fieldset label ion-icon{
+  color: var(--text-color);
+}
+
+fieldset label input{
+  border: none;
+  background-color: var(--bg-color);
+  width: 90%;
+}
+
+fieldset label input:focus{
+  outline: none;
+}
+
+form textarea{
+  padding: 12px 16px 16px 16px;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1.5px solid var(--paragraph-color);
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+form textarea:focus{
+  outline: none;
+}
+
+form button{
+  height: 45px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: var(--style-border);
+  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  color: var(--cards-bg-color);
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+/* Footer */
+
+footer{
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 78px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--paragraph-color);
+  color: var(--cards-bg-color);
 }
