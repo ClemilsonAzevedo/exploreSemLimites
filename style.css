@@ -20,7 +20,7 @@
 body {
   font-family: var(--text-font);
   background-color: var(--bg-color);
-  width: 100vw;
+  width: 100%;
 }
 
 /* Section Home */
@@ -96,25 +96,22 @@ body {
 
 /* Form Section */
 
-#form{
-  width: 100%;
-}
-
-form{
+form {
   display: flex;
   flex-direction: column;
   margin: 78px 25px;
   gap: 25px;
+  max-width: 520px;
 }
 
-form h3{
+form h3 {
   font-size: 2rem;
   font-weight: bold;
   color: var(--text-color);
   margin: 20px;
 }
 
-fieldset{
+fieldset {
   padding: 12px 16px 12px 14px;
   align-items: center;
   gap: 12px;
@@ -122,22 +119,22 @@ fieldset{
   border: var(--style-border);
 }
 
-fieldset label ion-icon{
+fieldset label ion-icon {
   color: var(--text-color);
 }
 
-fieldset label input{
+fieldset label input {
   border: none;
   font-weight: 500;
   background-color: var(--bg-color);
   width: 90%;
 }
 
-fieldset label input:focus{
+fieldset label input:focus {
   outline: none;
 }
 
-form textarea{
+form textarea {
   padding: 12px 16px 16px 16px;
   gap: 10px;
   border-radius: 16px;
@@ -147,11 +144,11 @@ form textarea{
   line-height: 140%;
 }
 
-form textarea:focus{
+form textarea:focus {
   outline: none;
 }
 
-form button{
+form button {
   height: 45px;
   padding: 16px;
   justify-content: center;
@@ -159,7 +156,7 @@ form button{
   gap: 10px;
   border-radius: 16px;
   border: var(--style-border);
-  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
   color: var(--cards-bg-color);
   font-size: 14px;
   font-weight: normal;
@@ -168,7 +165,7 @@ form button{
 
 /* Footer */
 
-footer{
+footer {
   padding: 16px;
   display: flex;
   justify-content: center;
@@ -179,4 +176,59 @@ footer{
   font-weight: normal;
   background-color: var(--paragraph-color);
   color: var(--cards-bg-color);
+}
+
+@media (min-width: 1024px) {
+  /* Section Home */
+  #home {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #home img {
+    width: 50%;
+  }
+
+  #home div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 28px;
+    position: relative;
+  }
+
+  #home div h1 {
+    color: var(--text-color);
+    font-size: 50px;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  #home div p {
+    font-size: 30px;
+  }
+
+  #home .vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #cards{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    var(--bg-color);
+  }
+
+  #form .self-image {
+    background: url(assets/stars-bg.png), lightgray 100% / cover no-repeat;
+  }
 }
