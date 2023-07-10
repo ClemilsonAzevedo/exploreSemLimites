@@ -27,6 +27,7 @@ body {
 #home {
   width: 100%;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 #home img {
@@ -127,6 +128,7 @@ fieldset label ion-icon{
 
 fieldset label input{
   border: none;
+  font-weight: 500;
   background-color: var(--bg-color);
   width: 90%;
 }
@@ -174,7 +176,7 @@ footer{
   gap: 10px;
   height: 78px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: normal;
   background-color: var(--paragraph-color);
   color: var(--cards-bg-color);
 }
